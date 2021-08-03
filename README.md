@@ -11,8 +11,10 @@
 需要安装EPICS和PyDM
 
 ## 结构
+
 <img src=https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture1.jpg width=50% />
 <img src=https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture2.jpg width=50% />
+
 ## 介绍
 
 1. 设备通讯：在本系统中，服务器端的IOC和用户端的OPI均存在与我的个人电脑中，通过不同的终端来运行。在与两台设备的通讯过程中，IOC均使用vxi11协议——在PCASpy中，这一协议及相关功能可通过pyvxi11包来获得，在StreamDevice中，与协议相关的功能通过其依赖的asyn模组来提供。
