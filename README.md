@@ -11,8 +11,8 @@
 需要安装EPICS和PyDM
 
 ## 结构
-![](https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture1.png)
-![](https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture2.png)
+![](https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture1.jpg)
+![](https://github.com/water-L/epicsoscilloscope/blob/main/arc/Picture2.jpg)
 
 ## 介绍
 
