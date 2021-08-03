@@ -1,0 +1,7 @@
+epicsEnvSet("IOC","iocKEYSIGHT")
+epicsEnvSet("TOP","/home/luo-yz/Desktop/epics")
+epicsEnvSet("SUPPORT","/home/luo-yz/EPICS/support")
+epicsEnvSet("ASYN","/home/luo-yz/EPICS/support/asyn")
+epicsEnvSet("STREAM","/home/luo-yz/EPICS/support/stream")
+epicsEnvSet("CALC","/home/luo-yz/EPICS/support/calc")
+epicsEnvSet("EPICS_BASE","/home/luo-yz/EPICS/epics-base")

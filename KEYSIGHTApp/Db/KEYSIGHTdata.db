@@ -1,0 +1,101 @@
+record(fanout,"KEYSIGHT:Param"){
+	field(DESC,"Get parameters")
+	field(SCAN,"Passive")
+	field(LNK1,"KEYSIGHT:Fre")
+	field(LNK2,"KEYSIGHT:Amp")
+	field(LNK3,"KEYSIGHT:Offset")
+	field(LNK4,"KEYSIGHT:Xorigin")
+	field(LNK5,"KEYSIGHT:Xincrement")
+	field(LNK6,"KEYSIGHT:Timebase")
+	field(LNK7,"KEYSIGHT:Yorigin")
+	field(LNK8,"KEYSIGHT:Yincrement")
+}
+
+record(ai,"KEYSIGHT:Fre"){
+    field(DESC,"Frequency (Hz)")
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getFrequency KEYSIGHT")
+    field (SCAN, "Passive")
+}
+
+record(ai,"KEYSIGHT:Amp"){
+    field(DESC,"Amplitude (V)")
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getAmplitude KEYSIGHT")
+    field (SCAN,"Passive")
+}
+
+record(ai,"KEYSIGHT:Offset"){
+    field(DESC,"Offset (V)")    
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getOffset KEYSIGHT")
+    field (SCAN,"Passive")
+}
+
+record(ai,"KEYSIGHT:Yorigin"){
+	field(DESC,"Yorigin")
+	field(DTYP,"stream")
+	field(INP,"@KEYSIGHTdata.proto getYorigin KEYSIGHT")
+	field(SCAN,"Passive")
+}
+
+record(ai,"KEYSIGHT:Yincrement"){
+	field(DESC,"Yincrement")
+	field(DTYP,"stream")
+	field(INP,"@KEYSIGHTdata.proto getYincrement KEYSIGHT")
+	field(SCAN,"Passive")
+}
+
+record(ai,"KEYSIGHT:Xorigin"){
+    field(DESC,"Xorigin")
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getXorigin KEYSIGHT")
+    field (SCAN,"Passive")
+}
+
+record(ai,"KEYSIGHT:Xincrement"){
+    field(DESC,"Xincrement")
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getXincrement KEYSIGHT")
+    field (SCAN, "Passive")
+}
+
+record(ai,"KEYSIGHT:Timebase"){
+    field(DESC,"Timebase (s)")
+    field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getTimebase KEYSIGHT")
+    field (SCAN, "Passive")
+}
+
+record(waveform,"KEYSIGHT:Wavedata"){
+	field(DESC,"Wavedata (V)")
+	field(DTYP,"stream")
+    field(INP,"@KEYSIGHTdata.proto getWavedata KEYSIGHT")
+    field(FTVL,"LONG")
+    field(NELM,"50000")
+    field(SCAN,".2 second")
+    field(FLNK,"KEYSIGHT:YData PP")
+    field(FLNK,"KEYSIGHT:XData PP")
+}
+
+record(acalcout,"KEYSIGHT:YData"){
+	field(DESC,"Y axis data")
+	field(SCAN,"Passive")
+	field(INPA,"KEYSIGHT:Yincrement NPP")
+	field(INPB,"KEYSIGHT:Yorigin NPP")
+	field(INPC,"KEYSIGHT:OFFSET NPP")
+	field(INAA,"KEYSIGHT:Wacedata NPP")
+	field(CALC,"AA*A+B-C")
+	field(NELM,"50000")
+}
+record(acalcout,"KEYSIGHT:XData"){
+	field(DESC,"X axis data")
+	field(SCAN,"Passive")
+	field(INPA,"KEYSIGHT:Xincrement NPP")
+	field(INPB,"KEYSIGHT:Xorigin NPP")
+	field(INPC,"KEYSIGHT:Timebase NPP")
+	field(C,"1.0E06")
+	field(CALC,"(IX*A+B+C)*D")
+	field(NELM,"50000")
+}
+

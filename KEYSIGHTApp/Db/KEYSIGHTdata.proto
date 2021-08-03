@@ -1,0 +1,37 @@
+getFrequency{
+	out ":MEASure:FREQuency?"; in "%f";
+}
+
+getAmplitude{
+	out ":SIMulation:AMPLitude?"; in "%f";
+}
+
+getOffset{
+	out ":CHANnel1:OFFSet?"; in "%f";
+}
+
+getYorigin{
+	out ":WAVeform:YORigin?"; in "%f";
+}
+
+getYincrement{
+	out ":WAVeform:YINCrement?"; in "%f";
+}
+
+getXorigin{
+	out ":WAVeform:XORigin?"; in "%f";
+}
+
+getXincrement{
+	out ":WAVeform:XINCrement?"; in "%f";
+}
+
+getTimebase{
+	out ":TIMebase:POSition?"; in "%f";
+}
+
+getWavedata{
+	out ":WAVeform:BYTeorder MSBFirst;:WAVeform:FORMat WORD;:WAVeform:DATA?";
+	in "\x23\x30%2r\x0A";
+}
+

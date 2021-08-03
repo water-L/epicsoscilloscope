@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    border: 1px solid #FF17365D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FF17365D;
+    padding: 5px 0px;
+    color: rgb(255, 255, 255);
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Tektronix AFG3052C</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">QFrame#frame{
+    border: 1px solid #FF17365D;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="1">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:FUNCTION</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Function:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Frequency(Hz):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:FREQUENCY</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Amplitude(V):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:AMPLITUDE</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Offset(V):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:OFFSET</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Phase(deg):</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:PHASE</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="PyDMPushButton" name="PyDMPushButton">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update parameters of AFG3052C &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="text">
+               <string>Update!</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://AFG:Acquire</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    border: 1px solid #FF17365D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FF17365D;
+    padding: 5px 0px;
+    color: rgb(255, 255, 255);
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string>KEYSIGHT DSOS054A</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMWaveformPlot" name="Waveimage">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="showXGrid">
+        <bool>true</bool>
+       </property>
+       <property name="showYGrid">
+        <bool>true</bool>
+       </property>
+       <property name="showRightAxis">
+        <bool>false</bool>
+       </property>
+       <property name="xLabels">
+        <stringlist>
+         <string>t/us</string>
+        </stringlist>
+       </property>
+       <property name="yLabels">
+        <stringlist>
+         <string>Voltage/V</string>
+        </stringlist>
+       </property>
+       <property name="curves">
+        <stringlist>
+         <string>{&quot;y_channel&quot;: &quot;ca://KEYSIGHT:Ydata&quot;, &quot;x_channel&quot;: &quot;ca://KEYSIGHT:Xdata&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+       <property name="autoRangeX">
+        <bool>false</bool>
+       </property>
+       <property name="autoRangeY">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="5" column="3">
+           <widget class="PyDMPushButton" name="PyDMPushButton_2">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the value of Fre. and Amp.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>Measure</string>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Param</string>
+            </property>
+            <property name="pressValue" stdset="0">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Fre</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::String</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Offsetout</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::String</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="PyDMPushButton" name="PyDMPushButton_3">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Auto Scale</string>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Autoscale</string>
+            </property>
+            <property name="pressValue" stdset="0">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Timebaserange</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::String</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Offset(V):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Frequency(Hz):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Hscale(s):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Amp</string>
+            </property>
+            <property name="displayFormat" stdset="0">
+             <enum>PyDMLineEdit::String</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Amplitude(V):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label_12">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Vscale(V):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://KEYSIGHT:Yscaleset</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMWaveformPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

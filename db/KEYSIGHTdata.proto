@@ -1,0 +1,53 @@
+autoscale{
+	out ":AUToscale";
+}
+
+setOffset{
+	out ":CHANnel1:OFFSet %s";
+}
+
+setTimerange{
+	out ":TIMebase:RANGe %s";
+}
+
+setYscale{
+	out ":CHANnel1:SCALe %s";
+}
+
+getFrequency{
+	out ":MEASure:FREQuency?"; in "%f";
+}
+
+getAmplitude{
+	out ":MEASure:VPP?"; in "%f";
+}
+
+getOffset{
+	out ":CHANnel1:OFFSet?"; in "%f";
+}
+
+getYorigin{
+	out ":WAVeform:YORigin?"; in "%f";
+}
+
+getYincrement{
+	out ":WAVeform:YINCrement?"; in "%f";
+}
+
+getXorigin{
+	out ":WAVeform:XORigin?"; in "%f";
+}
+
+getXincrement{
+	out ":WAVeform:XINCrement?"; in "%f";
+}
+
+getTimebase{
+	out ":TIMebase:POSition?"; in "%f";
+}
+
+getWavedata{
+	out ":ACQuire:POINts:ANALog 32768;:WAVeform:BYTeorder MSBFirst;:WAVeform:FORMat WORD;:WAVeform:DATA? 1,25000";
+	in "\x23\x30%2r\x0A";
+}
+

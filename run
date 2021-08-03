@@ -1,0 +1,10 @@
+#!/bin/bash
+gnome-terminal -e 'python3.8 AFG.py'
+cd iocBoot/iocKEYSIGHT
+gnome-terminal -e './st.cmd'
+cd ..
+cd ..
+sleep 0.1
+gnome-terminal -e 'python3.8 wave.py'
+sleep 0.1
+gnome-terminal -e 'pydm ctrl.ui'
