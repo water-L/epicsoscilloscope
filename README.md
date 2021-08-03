@@ -8,7 +8,7 @@
 
 电脑操作系统：Ubuntu 20.04
 
-EPICS：EPICS 7.0
+需要安装EPICS和PyDM
 
 ## 介绍
 
