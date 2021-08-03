@@ -1,5 +1,4 @@
-# epicsoscilloscope
-an oscilloscope based on EPICS
+# Epics Oscilloscope
 
 ## 平台
 
