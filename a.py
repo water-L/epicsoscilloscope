@@ -13,8 +13,8 @@ pvdb = {
 class myDriver(Driver):
     def __init__(self):
         Driver.__init__(self)
-        xdata = open('//home//luo-yz//Desktop//datax.dat','r')
-        ydata = open('//home//luo-yz//Desktop//datay.dat','r')
+        xdata = open('datax.dat','r')
+        ydata = open('datay.dat','r')
         self.x = xdata.read().splitlines()
         self.y = ydata.read().splitlines()
         self.x = np.array(list(map(float,self.x)))
